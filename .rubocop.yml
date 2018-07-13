@@ -1,0 +1,41 @@
+Metrics/LineLength:
+  Max: 120
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'lib/**/*'
+    - 'log/**/*'
+    - 'public/**/*'
+    - 'script/**/*'
+    - 'spec/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - 'config.ru'
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'Guardfile'
+Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+Metrics/MethodLength:
+  Max: 20
+Rails:
+  Enabled: true
+Rails/Delegate:
+  Enabled: false
