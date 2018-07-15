@@ -12,6 +12,8 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "rubocop", "~> 0.58.1", require: false
+gem "mastodon-api", require: "mastodon"
+gem "themes_on_rails"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
