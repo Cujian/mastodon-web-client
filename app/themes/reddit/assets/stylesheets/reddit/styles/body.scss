@@ -1,0 +1,12 @@
+.body {
+  margin-top: 48px;
+  padding: 20px 24px;
+  background: rgb(218, 224, 230);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}

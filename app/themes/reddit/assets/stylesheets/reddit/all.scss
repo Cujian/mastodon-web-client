@@ -1,0 +1,58 @@
+@import "base/global";
+@import "base/colors";
+@import "styles/header";
+@import "styles/body";
+
+.body-container {
+  display: flex;
+  padding: 20px 24px;
+  justify-content: center;
+}
+
+.mainbar-container {
+  height: 10000px;
+  min-width: 0px;
+  width: 648px;
+}
+
+.sidebar {
+  margin-left: 24px;
+  width: 312px;
+  flex: 0 0 312px;
+}
+
+.sidebar-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.status {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: flex;
+  align-content: space-between;
+}
+
+.avatar {
+  border-radius: 10px;
+}
+
+.status-card {
+  margin-left: 15px;
+}
+
+.status-author {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.posted-time {
+  font-weight: 400;
+  font-style: italic;
+}

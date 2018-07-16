@@ -1,1 +1,39 @@
-Reddit Style Layout Index
+<div>
+  <header class="header">
+    <div>
+    </div>
+  </header>
+  <div class="body">
+    <div></div>
+    <div class="body-container">
+      <div class="mainbar-container">
+        <% 1.upto(10).each do |_| %>
+          <div class="status">
+            <div class="status-avatar">
+              <%= image_tag "http://i.pravatar.cc/75?img=58", class: "avatar" %>
+            </div>
+            <div class="status-card">
+              <div class="status-author">
+                <div>
+                  Josh Doe @ <a href="#">john.doe@foo.bar</a>
+                </div>
+                <div class="posted-time">
+                  16m
+                </div>
+              </div>
+              <div class="status-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <div class="status-actions">
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-container">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
