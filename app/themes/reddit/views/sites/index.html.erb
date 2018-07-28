@@ -2,6 +2,27 @@
   <header class="header">
     <div class="logo">
       <%= image_tag "reddit/logo.png", class: "logo-image" %>
+      <div class="logo-text">Cujian</div>
+    </div>
+    <div class="popular-selector">
+      <button class="popular-button" role="navigation">
+        <%= image_tag "reddit/popular-icon.svg", class: "popular-icon" %>
+        <div class="popular-text">Popular</div>
+        <%= image_tag "reddit/down-arrow-icon.svg", class: "down-arrow-icon" %>
+      </button>
+      <div class="popular-menu">
+        <input type="text" class="filter" placeholder="Filter" />
+        <div class="feed-title">Feeds</div>
+        <a href="#" class="popular-links">
+          Popular
+        </a>
+        <a href="#" class="popular-links">
+          All
+        </a>
+        <a href="#" class="popular-links">
+          Original Content
+        </a>
+      </div>
     </div>
     <div class="search-bar">
       <div class="search-container">
