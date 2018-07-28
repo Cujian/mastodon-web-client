@@ -1,6 +1,5 @@
 .body {
   margin-top: 48px;
-  padding: 20px 24px;
   background: rgb(218, 224, 230);
   height: 100%;
   position: relative;
@@ -10,3 +9,124 @@
   min-height: 100vh;
   justify-content: center;
 }
+
+.body-menu {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.submenu {
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+
+  .view-layout {
+    display: flex;
+    align-items: center;
+    width: 112px;
+
+    .label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: rgb(124, 124, 124);
+      margin-top: 1px;
+    }
+
+    .view-menu-btn-container {
+      margin-left: 12px;
+      height: 20px;
+    }
+
+    .view-menu-icon {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .separator {
+    height: 20px;
+    width: 1px;
+    background: rgb(237, 239, 241);
+    margin: 0 15px 0 10px;
+  }
+
+  .sort {
+    display: flex;
+    align-items: center;
+
+    .sort-menu-container {
+      display: flex;
+      height: 20px;
+      align-items: center;
+      width: 80px;
+      margin: 0 10px;
+      position: relative;
+      cursor: pointer;
+
+      .sort-menu-label {
+        color: rgb(0, 121, 211);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin-left: 5px;
+        text-transform: uppercase;
+      }
+    }
+
+    .label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: rgb(124, 124, 124);
+      margin-top: 1px;
+    }
+
+    .sort-hot-menu-icon {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .sort-menu-down-icon {
+      width: 20px;
+      height: 16px;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      margin-top: -2px;
+    }
+  }
+
+  .country-selector {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 110px;
+    cursor: pointer;
+
+    .country-selector-label {
+      color: rgb(0, 121, 211);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-left: 5px;
+      text-transform: uppercase;
+    }
+
+    .menu-down-icon {
+      width: 20px;
+      height: 16px;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      margin-top: -2px;
+    }
+  }
+}
+

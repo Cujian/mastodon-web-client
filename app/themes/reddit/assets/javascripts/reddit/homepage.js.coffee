@@ -1,6 +1,6 @@
 $ ->
   $(document).click (e) ->
-    if e.target.className != "popular-button" and $(e.target).parents(".popular-button").length == 0
+    if e.target.className != "popular-button" and $(e.target).parents(".popular-button").length == 0 and e.target.className != "filter"
       $(".popular-menu").hide()
 
     if e.target.className != "user-menu-button" and $(e.target).parents(".user-menu-button").length == 0

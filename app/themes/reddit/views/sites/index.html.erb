@@ -51,18 +51,42 @@
     <div class="header-user-dropdown">
       <button class="user-menu-button" role="navigation">
         <div>
-          <%= image_tag "reddit/person-account", class: "person-account-icon" %>
+          <%= image_tag "reddit/person-account.svg", class: "person-account-icon" %>
           <%= image_tag "reddit/down-arrow-icon.svg", class: "down-arrow-icon" %>
         </div>
       </button>
     </div>
   </header>
   <div class="body">
-    <div></div>
+    <div class="body-menu">
+      <div class="submenu">
+        <div class="view-layout">
+          <div class="label">View</div>
+          <div class="view-menu-btn-container">
+            <%= image_tag "reddit/view-card-selected.svg", class: "view-menu-icon" %>
+            <%= image_tag "reddit/view-classic-unselected.svg", class: "view-menu-icon" %>
+            <%= image_tag "reddit/view-compact-unselected.svg", class: "view-menu-icon" %>
+          </div>
+        </div>
+        <div class="separator"></div>
+        <div class="sort">
+          <div class="label">Sort</div>
+          <div class="sort-menu-container">
+            <%= image_tag "reddit/sort-hot-selected.svg", class: "sort-hot-menu-icon" %>
+            <div class="sort-menu-label">hot</div>
+            <%= image_tag "reddit/down-arrow-icon-blue.svg", class: "sort-menu-down-icon" %>
+          </div>
+        </div>
+        <div class="country-selector">
+          <div class="country-selector-label">Australia</div>
+          <%= image_tag "reddit/down-arrow-icon-blue.svg", class: "menu-down-icon" %>
+        </div>
+      </div>
+    </div>
+
     <div class="body-container">
       <div class="mainbar-container">
         <% @public_timeline.each do |timeline| %>
-          <%#= debug timeline %>
           <div class="status">
             <div class="status-avatar">
               <%= image_tag timeline.account.avatar, class: "avatar" %>
