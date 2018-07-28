@@ -1,18 +1,21 @@
 $ ->
   $(document).click (e) ->
-    if $(".popular-menu").length > 0
+    if e.target.className != "popular-button" and $(e.target).parents(".popular-button").length == 0
       $(".popular-menu").hide()
 
+    if e.target.className != "user-menu-button" and $(e.target).parents(".user-menu-button").length == 0
+      $(".main-user-dropdown-menu").hide()
 
   $(".popular-button").click (e) ->
     e.preventDefault()
-    e.stopPropagation()
     $(".popular-menu").toggle()
 
   $(".filter").click (e) ->
     e.preventDefault()
-    e.stopPropagation()
 
   $(".popular-links").click (e) ->
     e.preventDefault()
-    e.stopPropagation()
+
+  $(".user-menu-button").click (e) ->
+    e.preventDefault()
+    $(".main-user-dropdown-menu").toggle()

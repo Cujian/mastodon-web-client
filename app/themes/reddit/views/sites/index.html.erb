@@ -48,6 +48,14 @@
         </g>
       </svg>
     </div>
+    <div class="header-user-dropdown">
+      <button class="user-menu-button" role="navigation">
+        <div>
+          <%= image_tag "reddit/person-account", class: "person-account-icon" %>
+          <%= image_tag "reddit/down-arrow-icon.svg", class: "down-arrow-icon" %>
+        </div>
+      </button>
+    </div>
   </header>
   <div class="body">
     <div></div>
@@ -105,4 +113,11 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="main-user-dropdown-menu">
+  <a href="#" class="user-menu-links">
+    <%= image_tag "reddit/login-logout-door.svg", class: "login-logout-icon" %>
+    <div class="user-menu-item">Log in / Sign Up</div>
+  </a>
 </div>

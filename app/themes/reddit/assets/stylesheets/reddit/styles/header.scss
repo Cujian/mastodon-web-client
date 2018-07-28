@@ -117,6 +117,32 @@ $breakpoint--xxl: 1800px;
       text-decoration: none;
       color: #000000;
     }
+
+  }
+
+  .header-user-dropdown {
+    position: relative;
+
+    .user-menu-button {
+      width: 70px;
+      background-color: transparent;
+      display: flex;
+      cursor: pointer;
+      margin: 7px 0px;
+      height: 75%;
+      border: none;
+      outline: 0;
+    }
+
+    .person-account-icon {
+      height: 24px;
+      width: 24px;
+    }
+
+    .down-arrow-icon {
+      height: 20px;
+      width: 20px;
+    }
   }
 
   .logo {
@@ -143,7 +169,7 @@ $breakpoint--xxl: 1800px;
   }
 
   .account {
-    flex: 0 0 24%;
+    flex: 1;
     display: flex;
     padding: 7px 0;
     justify-content: flex-end;
@@ -154,6 +180,10 @@ $breakpoint--xxl: 1800px;
 
     @media screen and (min-width: $breakpoint--xs + 1) and (max-width: $breakpoint--l) {
       flex: 0 0 39%;
+    }
+
+    @media screen and (min-width: $breakpoint--l) {
+      margin-right: 25px;
     }
   }
 }
@@ -241,6 +271,39 @@ $breakpoint--xxl: 1800px;
 
 .account-icon {
   display: none;
+}
+
+.main-user-dropdown-menu {
+  position: fixed;
+  top: 47px;
+  z-index: 80;
+  width: 180px;
+  background-color: #ffffff;
+  right: 0;
+  border: 1px solid #edeff1;
+  box-shadow: rgba(28, 28, 28, 0.2) 0px 2px 4px 0px;
+  border-radius: 4px;
+  padding: 10px 0;
+  display: none;
+
+  .login-logout-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .user-menu-links {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .user-menu-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 @media screen and (max-width: $breakpoint--xs) {
