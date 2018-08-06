@@ -8,8 +8,37 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= yield %>
 
-<%= yield %>
+  <div class="countries-menu">
+    <div>
+      <button class="btn-dropdown-menu">
+        <span>Everywhere</span>
+      </button>
+    </div>
+    <div>
+      <button class="btn-dropdown-menu">
+        <span>United States</span>
+      </button>
+    </div>
+  </div>
 
+  <div class="trends-menu">
+    <div>
+      <button class="btn-dropdown-menu">
+        <span>New</span>
+      </button>
+    </div>
+    <div>
+      <button class="btn-dropdown-menu">
+        <span>Top</span>
+      </button>
+    </div>
+    <div>
+      <button class="btn-dropdown-menu">
+        <span>Rising</span>
+      </button>
+    </div>
+  </div>
 </body>
 </html>

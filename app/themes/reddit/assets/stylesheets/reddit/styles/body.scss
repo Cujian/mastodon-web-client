@@ -130,3 +130,64 @@
   }
 }
 
+.countries-menu, .trends-menu {
+  background-color: #ffffff;
+  max-height: 200px;
+  position: absolute;
+  box-shadow: rgba(28, 28, 28, 0.2) 0px 2px 4px 0px;
+  color: rgb(28, 28, 28);
+  margin-top: 8px;
+  z-index: 10;
+  border-radius: 4px;
+  visibility: hidden;
+}
+
+.btn-dropdown-menu {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: rgb(135, 138, 140);
+  fill: rgb(135, 138, 140);
+  background-color: rgb(255, 255, 255);
+  display: block;
+  text-transform: capitalize;
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(237, 239, 241);
+  border-image: initial;
+  padding: 8px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(229, 241, 250);
+    color: rgb(28, 28, 28);
+    fill: rgb(28, 28, 28);
+    border-color: rgb(229, 241, 250);
+    outline: none;
+  }
+}
+
+#view-card-unselected, #view-classic-selected, #view-compact-selected {
+  display: none;
+}
+
+.action-menu {
+  margin-right: 16px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #606984;
+  transition: color 100ms ease-in;
+  padding: 0;
+  font-size: 16px;
+  outline: none;
+
+  &:hover {
+    color: #707b97;
+    -webkit-transition: color 200ms ease-out;
+    transition: color 200ms ease-out;
+  }
+}

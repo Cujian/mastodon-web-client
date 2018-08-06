@@ -63,9 +63,18 @@
         <div class="view-layout">
           <div class="label">View</div>
           <div class="view-menu-btn-container">
-            <%= image_tag "reddit/view-card-selected.svg", class: "view-menu-icon" %>
-            <%= image_tag "reddit/view-classic-unselected.svg", class: "view-menu-icon" %>
-            <%= image_tag "reddit/view-compact-unselected.svg", class: "view-menu-icon" %>
+            <span id="view-card-menu">
+              <%= image_tag "reddit/view-card-unselected.svg", class: "view-menu-icon", id: "view-card-unselected" %>
+              <%= image_tag "reddit/view-card-selected.svg", class: "view-menu-icon", id: "view-card-selected" %>
+            </span>
+            <span id="view-classic-menu">
+              <%= image_tag "reddit/view-classic-unselected.svg", class: "view-menu-icon", id: "view-classic-unselected" %>
+              <%= image_tag "reddit/view-classic-selected.svg", class: "view-menu-icon", id: "view-classic-selected" %>
+            </span>
+            <span id="view-compact-menu">
+              <%= image_tag "reddit/view-compact-unselected.svg", class: "view-menu-icon", id: "view-compact-unselected" %>
+              <%= image_tag "reddit/view-compact-selected.svg", class: "view-menu-icon", id: "view-compact-selected" %>
+            </span>
           </div>
         </div>
         <div class="separator"></div>
@@ -102,30 +111,27 @@
               </div>
               <div class="status-content">
                 <%= raw timeline.content %>
+                <% timeline.media_attachments.each do |attachment| %>
+                  <% if attachment.type == "image" %>
+                    <p>
+                      <%= image_tag attachment.url, width: "150px;" %>
+                    </p>
+                  <% end %>
+                <% end %>
               </div>
               <div class="status-actions">
-              </div>
-            </div>
-          </div>
-        <% end %>
-        <% 1.upto(10).each do |_| %>
-          <div class="status">
-            <div class="status-avatar">
-              <%= image_tag "http://i.pravatar.cc/75?img=58", class: "avatar" %>
-            </div>
-            <div class="status-card">
-              <div class="status-author">
-                <div>
-                  Josh Doe @ <a href="#">john.doe@foo.bar</a>
-                </div>
-                <div class="posted-time">
-                  16m
-                </div>
-              </div>
-              <div class="status-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </div>
-              <div class="status-actions">
+                <button class="action-menu">
+                  <%= icon("fas", "fa-fw fa-reply") %>
+                </button>
+                <button class="action-menu">
+                  <%= icon("fas", "fa-fw fa-retweet") %>
+                </button>
+                <button class="action-menu">
+                  <%= icon("fas", "fa-fw fa-star") %>
+                </button>
+                <button class="action-menu">
+                  <%= icon("fas", "fa-fw fa-ellipsis-h") %>
+                </button>
               </div>
             </div>
           </div>
